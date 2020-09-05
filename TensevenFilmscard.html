@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影卡片的练习</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <style>
+        /* 设置最外层内容的样式 */
+        .card {
+            width: 240px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+
+        /* .image-warpper{
+               border: 1px solid red;
+               此处是为了图片是默认基线对齐的，为了消除看效果而加的边框
+           } */
+        /* 图片的样式 */
+        .image-warpper img {
+            width: 100%;
+            vertical-align: bottom;
+            border-radius: 4px 4px 0px 0px;
+        }
+        /* 标题区内容区的样式设置 */
+        .info {
+            padding: 0 18px;
+            color: #acaaaa;
+            font-size: 14px;
+        }
+             
+        .info .title {
+            color: #717171;
+            font-size: 18px;
+            margin-top:15px;
+            margin-bottom: 18px;
+        }
+        .info .district {
+            color: #acaaaa;
+            font-size: 14px;
+            margin-left: 4px;
+        }
+        .info .district i{
+            margin-right: 7px;
+        }
+        .info .intro{
+            line-height: 20px;
+            margin: 18px 4px;
+        }
+        /* 底部评分区域的样式 */
+        .star-warpper{
+            height: 47px;
+            line-height: 47px;
+            color: #dddddd;
+            border: 1px solid #e9e9e9;
+            padding: 0 16px;
+        }
+        .star-warpper .star{
+            float: left;
+        }
+        .star-warpper .weixin{
+            float:right;
+        }
+
+        .star .light{
+            color: #b9cb41;
+        }
+        .star-warpper .weixin{
+            color: #d6d6d6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建一个总体的容器 -->
+    <div class="card">
+        <!-- 创建一个图片的容器 -->
+        <div class="image-warpper">
+            <img src="./img/10.jpg" alt="">
+        </div>
+        <!-- 创建内容区的容器 -->
+        <div class="info">
+            <!-- 标题一 -->
+            <h2 class="title">
+                Animation films
+            </h2>
+            <!-- 标题二 district地区-->
+            <h3 class="district">
+                <i class="fas fa-map-marker-alt"></i>
+                Animation
+            </h3>
+            <p class="intro">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <!-- 创建评分及分享区域容器 -->
+        <div class="star-warpper">
+            <ul class="star">
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star light"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+            </ul>
+            <!-- 创建分享图标的容器 -->
+            <ul class="weixin">
+                <li class="fab fa-weixin"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
